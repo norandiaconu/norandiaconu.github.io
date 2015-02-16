@@ -39,7 +39,7 @@ var mainState = {
         this.pipes.createMultiple(30, 'pipe');  
 
         // Timer that calls 'addRowOfPipes' ever 1.5 seconds
-        this.timer = this.game.time.events.loop(1500, this.addRowOfPipes, this);           
+        this.timer = this.game.time.events.loop(1000, this.addRowOfPipes, this);           
 
         // Add a score label on the top left of the screen
         this.score = 0;
