@@ -1,5 +1,5 @@
 // Initialize Phaser, and creates a 400x490px game
-var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(700, 490, Phaser.AUTO, 'gameDiv');
 
 // Creates a new 'main' state that will contain the game
 var mainState = {
@@ -32,8 +32,6 @@ var mainState = {
         var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         spaceKey.onDown.add(this.jump, this);
         game.input.onDown.add(this.jump, this);
-        //var click = this.game.mouse.input.button(Phaser.Mouse.LEFT_BUTTON);
-        //click.add(this.jump, this); 
 
         // Create a group of 20 pipes
         this.pipes = game.add.group();
