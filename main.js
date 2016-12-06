@@ -3,6 +3,7 @@ function main() {
   $('.info').fadeIn(1000);
   $('.resume').hide();
   $('.button').on('click', function() {
+	$('.info').fadeToggle();
     $(this).next().toggle();
     $(this).toggleClass('active');
   });
