@@ -10,8 +10,4 @@ function main() {
   });
 }
 
-function toggle() {
-  $('.button').next().toggle();
-  $('.button').toggleClass('active');
-}
 $(document).ready(main);
