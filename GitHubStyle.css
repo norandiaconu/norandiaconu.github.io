@@ -15,6 +15,7 @@ body {
 }
 
 .resume {
+  display: none;
   text-align: left;
   margin: 1em 0;
 }

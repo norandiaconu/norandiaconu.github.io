@@ -5,7 +5,7 @@ function main() {
   $('.info').fadeIn(1000);
   $('.button').fadeIn(2000);
   $('.button').on('click', function() {
-	$('.info').fadeToggle(200);
+    $('.info').fadeToggle(200);
     $(this).next().toggle();
     $(this).toggleClass('active');
   });
