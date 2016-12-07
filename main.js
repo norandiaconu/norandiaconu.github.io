@@ -1,13 +1,17 @@
 function main() {
-  $('.resume').hide();
-  $('.info').hide();
-  $('.button').hide();
   $('.info').fadeIn(1000);
   $('.button').fadeIn(2000);
   $('.button').on('click', function() {
+    setTimeout(function(){
+      $('.resume').fadeToggle(200);
+      $('.button').toggleClass('active');
+    }, 200);
     $('.info').fadeToggle(200);
-    $(this).next().toggle();
-    $(this).toggleClass('active');
   });
+}
+
+function toggle() {
+  $('.button').next().toggle();
+  $('.button').toggleClass('active');
 }
 $(document).ready(main);
