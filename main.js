@@ -6,12 +6,14 @@ function main() {
       $('.resume').fadeToggle(200);
       $('.button').toggleClass('active');
     }, 200);
+    $('.title').fadeToggle(200);
     $('.info').fadeToggle(200);
   });
 }
 
 function toggle() {
-  $('.button').next().toggle();
+  $('.resume').toggle();
+  //$('.button').next().toggle();
   $('.button').toggleClass('active');
 }
 $(document).ready(main);

@@ -7,12 +7,15 @@ body {
 }
 
 .button {
-  display: none;
-  padding: 0.75em 1.25em;
+  display: inline-block;
+  margin: 1em;
+  padding: 0.75em 1em;
   background-color: whitesmoke;
   opacity: 0.9;
   width: 10em;
   color: black;
+  align-content: center;
+  cursor: pointer;
 }
 
 .resume {
@@ -29,3 +32,8 @@ body {
 .info {
   display: none;
 }
+
+h3 {
+  line-height: 0.7;
+}
+  
