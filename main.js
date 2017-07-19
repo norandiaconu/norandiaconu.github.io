@@ -11,8 +11,11 @@ function main() {
   });
 }
 
+<<<<<<< HEAD
 function toggle() {
   $('.resume').toggle();
   $('.button').toggleClass('active');
 }
+=======
+>>>>>>> 4c5b811cb1606cac2e0079fa3c1ea044b097b3c8
 $(document).ready(main);
