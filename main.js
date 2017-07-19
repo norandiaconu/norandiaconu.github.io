@@ -1,5 +1,5 @@
 function main() {
-  $('.info').fadeIn(1000);
+  $('.info').fadeIn(2000);
   $('.button').fadeIn(2000);
   $('.button').on('click', function() {
     setTimeout(function(){
@@ -13,7 +13,6 @@ function main() {
 
 function toggle() {
   $('.resume').toggle();
-  //$('.button').next().toggle();
   $('.button').toggleClass('active');
 }
 $(document).ready(main);
