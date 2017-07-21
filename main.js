@@ -1,19 +1,25 @@
 function main() {
+  var clicked = 0;
   $('.info').fadeIn(2000);
-  $('.button').fadeIn(2000);
   $('.button').on('click', function() {
-    setTimeout(function(){
+    if (clicked == 0) {
+      setTimeout(function(){
+        $('.resume').fadeToggle(200);
+        $('.button').toggleClass('active');
+      }, 200);
+      $('.title').fadeToggle(200);
+      $('.info').fadeToggle(200);
+      clicked = 1;
+    } else {
+      setTimeout(function(){
+        $('.title').fadeToggle(200);
+        $('.info').fadeToggle(200);
+      }, 200);
       $('.resume').fadeToggle(200);
       $('.button').toggleClass('active');
-    }, 200);
-    $('.title').fadeToggle(200);
-    $('.info').fadeToggle(200);
+      clicked = 0;
+    }
   });
-}
-
-function toggle() {
-  $('.resume').toggle();
-  $('.button').toggleClass('active');
 }
 
 $(document).ready(main);
