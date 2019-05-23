@@ -18,6 +18,19 @@ body {
   cursor: pointer;
 }
 
+.linkButton {
+  display: inline-block;
+  margin: 1em;
+  padding: 0.5em 0.75em;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  width: 10em;
+  color: black;
+  align-content: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .resume {
   display: none;
   text-align: left;
@@ -36,4 +49,17 @@ body {
 h3 {
   line-height: 0.7;
 }
-  
+
+#panel, #projects {
+  padding: 1em;
+  text-align: center;
+  background-color: #5db344;
+  border: solid 0.1em #c3c3c3;
+  display: none;
+  width: 75%;
+  margin: auto;
+}
+
+#projects {
+  text-decoration: underline;
+}

@@ -1,4 +1,8 @@
 function main() {
+  $('#projects').fadeIn(2000);
+  $("#projects").click(function(){
+    $("#panel").slideToggle("slow");
+  });
   var clicked = 0;
   $('.info').fadeIn(2000);
   $('.button').on('click', function() {
