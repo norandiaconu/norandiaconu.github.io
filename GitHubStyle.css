@@ -46,10 +46,6 @@ body {
   display: none;
 }
 
-h3 {
-  line-height: 0.7;
-}
-
 #panel, #projects {
   padding: 1em;
   text-align: center;
