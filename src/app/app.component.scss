@@ -1,0 +1,284 @@
+$primary-color: #4ea5d9;
+$secondary-color: #103c56;
+$link-color: orangered;
+
+.top {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2rem;
+    background-color: $secondary-color;
+    z-index: 2;
+    opacity: 90%;
+    border-bottom-style: solid;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    cursor: pointer;
+
+    &:visited {
+        color: $link-color;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link {
+    border-radius: 2px;
+    padding: 1px 10px 1px 10px;
+}
+
+.video-container {
+    position: relative;
+}
+
+#video {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.center-name {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.center-title {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    @media (orientation: portrait) {
+        top: 70%;
+    }
+}
+
+.above {
+    z-index: 1;
+    text-shadow: 0 0 10px #000;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.flex-50 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media (orientation: portrait) {
+        flex-direction: column;
+    }
+}
+
+.flex-50-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media (orientation: portrait) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.overlay {
+    z-index: 2;
+    width: 80%;
+    height: 80%;
+    background-color: $secondary-color;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: 10%;
+    border-radius: 15px;
+}
+
+.top-right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.position {
+    border-style: solid;
+    width: 40%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (orientation: portrait) {
+        width: 50%;
+    }
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.about {
+    width: 40%;
+    @media (orientation: portrait) {
+        width: 90%;
+        padding-bottom: 10%;
+    }
+}
+
+.selfie {
+    margin-top: 2rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: 0% 20%;
+    @media (orientation: portrait) {
+        margin-top: 0;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.logo {
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.hexagon {
+    background: $primary-color;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    height: 8rem;
+    width: 8rem;
+    color: black;
+    position: relative;
+    margin-right: 1rem;
+}
+
+.center-skill {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.oneCard {
+    perspective: 150rem;
+    height: 20rem;
+    width: 15rem;
+    position: relative;
+    font-size: large;
+    @media (orientation: portrait) {
+        padding-bottom: 1rem;
+        height: 15rem;
+    }
+
+    &__side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20rem;
+        width: 15rem;
+        transition: all 1s ease;
+        backface-visibility: hidden;
+        @media (orientation: portrait) {
+            height: 15rem;
+        }
+    }
+
+    &__front {
+        transform: rotateY(0);
+        border-style: solid;
+        border-color: $primary-color;
+        border-radius: 15px;
+    }
+
+    &:hover &__front {
+        transition: all 1s ease;
+        transform: rotateY(180deg);
+    }
+
+    &__back {
+        transform: rotateY(180deg);
+        border-style: solid;
+        border-color: $primary-color;
+        border-radius: 15px;
+    }
+
+    &:hover &__back {
+        transition: all 1s ease;
+        transform: rotateY(0);
+    }
+}
+
+.center2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    color: orangered;
+}
+
+.margin2 {
+    margin: 0.6rem;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 0 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding-left: 1rem;
+}
+
+.credits {
+    padding-top: 1rem;
+}
