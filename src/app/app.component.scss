@@ -115,6 +115,11 @@ a {
     top: 10%;
     left: 10%;
     border-radius: 15px;
+
+    @media (orientation: portrait) {
+        width: 90%;
+        left: 5%;
+    }
 }
 
 .top-right {
@@ -132,19 +137,22 @@ a {
     align-items: center;
 
     @media (orientation: portrait) {
-        width: 50%;
+        width: 70%;
     }
 }
 
 .no-margin {
     margin: 0;
+    text-align: center;
 }
 
 .about {
     width: 40%;
+
     @media (orientation: portrait) {
         width: 90%;
-        padding-bottom: 10%;
+        padding-left: 10%;
+        padding-bottom: 30%;
     }
 }
 
@@ -155,6 +163,7 @@ a {
     border-radius: 15px;
     object-fit: cover;
     object-position: 0% 20%;
+
     @media (orientation: portrait) {
         margin-top: 0;
         height: 200px;
@@ -169,10 +178,15 @@ a {
 }
 
 .skills {
+    height: 16rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 2rem;
+
+    @media (orientation: portrait) {
+        height: 12rem;
+    }
 }
 
 .hexagon {
@@ -183,6 +197,12 @@ a {
     color: black;
     position: relative;
     margin-right: 1rem;
+
+    @media (orientation: portrait) {
+        height: 6rem;
+        width: 6rem;
+        font-size: small;
+    }
 }
 
 .center-skill {
@@ -254,6 +274,10 @@ a {
     color: orangered;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .margin2 {
     margin: 0.6rem;
 }
@@ -273,6 +297,11 @@ a {
     padding: 0 2rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+    border: solid transparent;
+
+    &:hover {
+        border: solid;
+    }
 }
 
 footer {

@@ -47,8 +47,6 @@ export class AppComponent {
         if (window.innerWidth > window.innerHeight) {
             if (window.scrollY > window.innerHeight * 0.7) {
                 this.aboutVisible = true;
-            }
-            if (window.scrollY > window.innerHeight * 1.0) {
                 this.showSkills();
             }
             if (window.scrollY > window.innerHeight * 1.7) {
@@ -58,10 +56,8 @@ export class AppComponent {
                 this.contactVisible = true;
             }
         } else {
-            if (window.scrollY > window.innerHeight * 0.3) {
+            if (window.scrollY > window.innerHeight * 0.2) {
                 this.aboutVisible = true;
-            }
-            if (window.scrollY > window.innerHeight * 0.5) {
                 this.showSkills();
             }
             if (window.scrollY > window.innerHeight * 1.1) {
