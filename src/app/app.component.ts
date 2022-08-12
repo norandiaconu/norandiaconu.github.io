@@ -17,6 +17,7 @@ import { Component, HostListener } from "@angular/core";
 })
 export class AppComponent {
     title = "norandiaconu-github-io";
+    timeout = 500;
     display = false;
     displayCredits = false;
     aboutVisible = false;
@@ -43,7 +44,7 @@ export class AppComponent {
     }
 
     @HostListener("window:scroll")
-    scroll() {
+    scroll(): void {
         if (window.innerWidth > window.innerHeight) {
             if (window.scrollY > window.innerHeight * 0.7) {
                 this.aboutVisible = true;
@@ -70,7 +71,7 @@ export class AppComponent {
     }
 
     delay(): Promise<void> {
-        return new Promise((resolve) => setTimeout(resolve, 500));
+        return new Promise((resolve) => setTimeout(resolve, this.timeout));
     }
 
     async showSkills(): Promise<void> {
