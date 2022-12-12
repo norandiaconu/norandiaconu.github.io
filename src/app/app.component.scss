@@ -102,6 +102,15 @@ a {
     }
 }
 
+.backdrop {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .overlay {
     z-index: 2;
     width: 80%;
@@ -130,8 +139,8 @@ a {
 
 .position {
     border-style: solid;
-    width: 40%;
-    margin: 1rem 0;
+    width: 45%;
+    margin: 0.7rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,8 +150,13 @@ a {
     }
 }
 
-.no-margin {
-    margin: 0;
+.mtb1 {
+    margin: 0.1rem 0 0.1rem 0;
+    text-align: center;
+}
+
+.mb1 {
+    margin: 0 0 0.1rem 0;
     text-align: center;
 }
 

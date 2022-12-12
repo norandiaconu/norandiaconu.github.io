@@ -34,13 +34,16 @@ export class AppComponent {
 
     experienceVisible = false;
     contactVisible = false;
+    totalHeight = 0;
 
     toggle(): void {
         this.display = !this.display;
+        this.totalHeight = document.documentElement.scrollHeight;
     }
 
     toggleCredits(): void {
         this.displayCredits = !this.displayCredits;
+        this.totalHeight = document.documentElement.scrollHeight;
     }
 
     @HostListener("window:scroll")

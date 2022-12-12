@@ -106,39 +106,45 @@
     </div>
 </div>
 
+<div class="backdrop" *ngIf="display" (click)="toggle()" [ngStyle]="{ height: totalHeight + 'px' }"></div>
 <div class="overlay" *ngIf="display" [@fade]>
     <a (click)="toggle()" class="top-right">
         <img src="assets/cross.svg" />
     </a>
     <div class="position">
-        <h4 class="no-margin">Angular Application Developer</h4>
-        <h5 class="no-margin">Aflac</h5>
-        <h6 class="no-margin">Current</h6>
+        <h4 class="mtb1">Front End Engineer (Angular)</h4>
+        <h5 class="mb1">Jumio</h5>
+        <h6 class="mb1">Current</h6>
     </div>
     <div class="position">
-        <h4 class="no-margin">Angular Developer</h4>
-        <h5 class="no-margin">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
-        <h6 class="no-margin">Feb 2021 - Jan 2022</h6>
+        <h4 class="mtb1">Angular Application Developer</h4>
+        <h5 class="mb1">Aflac</h5>
+        <h6 class="mb1">Feb 2022 - Sept 2022</h6>
     </div>
     <div class="position">
-        <h4 class="no-margin">Java Developer</h4>
-        <h5 class="no-margin">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
-        <h6 class="no-margin">Oct 2019 - Feb 2021</h6>
+        <h4 class="mtb1">Angular Developer</h4>
+        <h5 class="mb1">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
+        <h6 class="mb1">Feb 2021 - Jan 2022</h6>
     </div>
     <div class="position">
-        <h4 class="no-margin">Software Developer</h4>
-        <h5 class="no-margin">RapidCourt</h5>
-        <h6 class="no-margin">Oct 2017 - Sept 2019</h6>
+        <h4 class="mtb1">Java Developer</h4>
+        <h5 class="mb1">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
+        <h6 class="mb1">Oct 2019 - Feb 2021</h6>
     </div>
     <div class="position">
-        <h4 class="no-margin">IT Manager</h4>
-        <h5 class="no-margin">Bright Audio Video</h5>
-        <h6 class="no-margin">Jan 2017 - Sept 2017</h6>
+        <h4 class="mtb1">Software Developer</h4>
+        <h5 class="mb1">RapidCourt</h5>
+        <h6 class="mb1">Oct 2017 - Sept 2019</h6>
     </div>
     <div class="position">
-        <h4 class="no-margin">Classroom Support Technician</h4>
-        <h5 class="no-margin">Appalachian State University</h5>
-        <h6 class="no-margin">Jul 2013 - Dec 2016</h6>
+        <h4 class="mtb1">IT Manager</h4>
+        <h5 class="mb1">Bright Audio Video</h5>
+        <h6 class="mb1">Jan 2017 - Sept 2017</h6>
+    </div>
+    <div class="position">
+        <h4 class="mtb1">Classroom Support Technician</h4>
+        <h5 class="mb1">Appalachian State University</h5>
+        <h6 class="mb1">Jul 2013 - Dec 2016</h6>
     </div>
 </div>
 
@@ -161,6 +167,7 @@
         <img src="assets/circle-up.svg" />
     </a>
 
+    <div class="backdrop" *ngIf="displayCredits" (click)="toggleCredits()" [ngStyle]="{ height: totalHeight + 'px' }"></div>
     <div class="overlay" *ngIf="displayCredits" [@fade]>
         <a (click)="toggleCredits()" class="top-right">
             <img src="assets/cross.svg" />
