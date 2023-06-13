@@ -56,7 +56,7 @@ export class AppComponent {
             if (window.scrollY > window.innerHeight * 1.7) {
                 this.experienceVisible = true;
             }
-            if (window.scrollY > window.innerHeight * 2.7) {
+            if (window.scrollY > window.innerHeight * 2.6) {
                 this.contactVisible = true;
             }
         } else {
