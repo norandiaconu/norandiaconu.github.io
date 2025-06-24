@@ -1,22 +1,25 @@
-import { animate, style, transition, trigger } from "@angular/animations";
-import { Component, HostListener } from "@angular/core";
+import { animate, style, transition, trigger } from '@angular/animations';
+import { Component, HostListener } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
-    selector: "app-root",
-    templateUrl: "./app.component.html",
-    styleUrls: ["./app.component.scss"],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
     animations: [
-        trigger("fade", [transition(":enter", [style({ opacity: 0 }), animate("0.5s ease-out", style({ opacity: 1 }))])]),
-        trigger("slide-right", [
-            transition(":enter", [
-                style({ transform: "translateX(-100%)" }),
-                animate("0.5s ease-out", style({ transform: "translateX(0)" })),
-            ]),
-        ]),
+        trigger('fade', [transition(':enter', [style({ opacity: 0 }), animate('0.5s ease-out', style({ opacity: 1 }))])]),
+        trigger('slide-right', [
+            transition(':enter', [
+                style({ transform: 'translateX(-100%)' }),
+                animate('0.5s ease-out', style({ transform: 'translateX(0)' }))
+            ])
+        ])
     ],
+    standalone: true,
+    imports: [NgStyle]
 })
 export class AppComponent {
-    title = "norandiaconu-github-io";
+    title = 'norandiaconu-github-io';
     timeout = 500;
     display = false;
     displayCredits = false;
@@ -36,18 +39,8 @@ export class AppComponent {
     contactVisible = false;
     totalHeight = 0;
 
-    toggle(): void {
-        this.display = !this.display;
-        this.totalHeight = document.documentElement.scrollHeight;
-    }
-
-    toggleCredits(): void {
-        this.displayCredits = !this.displayCredits;
-        this.totalHeight = document.documentElement.scrollHeight;
-    }
-
-    @HostListener("window:scroll")
-    scroll(): void {
+    @HostListener('window:scroll')
+    private scroll(): void {
         if (window.innerWidth > window.innerHeight) {
             if (window.scrollY > window.innerHeight * 0.7) {
                 this.aboutVisible = true;
@@ -73,11 +66,21 @@ export class AppComponent {
         }
     }
 
-    delay(): Promise<void> {
+    protected toggle(): void {
+        this.display = !this.display;
+        this.totalHeight = document.documentElement.scrollHeight;
+    }
+
+    protected toggleCredits(): void {
+        this.displayCredits = !this.displayCredits;
+        this.totalHeight = document.documentElement.scrollHeight;
+    }
+
+    private delay(): Promise<void> {
         return new Promise((resolve) => setTimeout(resolve, this.timeout));
     }
 
-    async showSkills(): Promise<void> {
+    private async showSkills(): Promise<void> {
         await this.delay();
         this.angularVisible = true;
         await this.delay();
