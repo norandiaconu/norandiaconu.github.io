@@ -15,7 +15,6 @@ import { NgStyle } from '@angular/common';
             ])
         ])
     ],
-    standalone: true,
     imports: [NgStyle]
 })
 export class AppComponent {
