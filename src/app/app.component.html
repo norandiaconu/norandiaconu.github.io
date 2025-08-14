@@ -1,219 +1,220 @@
 <div class="top">
-  <a href="#about" class="link">
-    <span>About</span>
-  </a>
-  <a href="#experience" class="link">
-    <span>Experience</span>
-  </a>
-  <a href="#contact" class="link">
-    <span>Contact</span>
-  </a>
+    <a href="#about" class="link">
+        <span>About</span>
+    </a>
+    <a href="#experience" class="link">
+        <span>Experience</span>
+    </a>
+    <a href="#contact" class="link">
+        <span>Contact</span>
+    </a>
 </div>
 
 <div class="video-container">
-  <video src="assets/mixkit-clouds-and-blue-sky-2408.mp4" type="video/mp4" loop autoplay [muted]="true" id="video"></video>
-  <h1 class="center-name above">NORAN DIACONU</h1>
-  <h3 class="center-title above">Angular Software Developer</h3>
+    <video src="assets/mixkit-clouds-and-blue-sky-2408.mp4" type="video/mp4" loop autoplay [muted]="true" id="video"></video>
+    <h1 class="center-name above">NORAN DIACONU</h1>
+    <h3 class="center-title above">Angular Software Developer</h3>
 </div>
 
 <div class="section" id="about">
-  @if (aboutVisible) {
-    <div [@fade]>
-      <h2 class="center">About Me</h2>
-      <div class="center">Experienced developer with a demonstrated history of working in the computer software industry.</div>
-      <div class="center">Fluent in Romanian with a working proficiency in Spanish.</div>
-      <div class="flex-50-2">
-        <div class="about">
-          <div class="skills">
-            @if (angularVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">Angular</div>
-              </div>
-            }
-            @if (javaVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">Java</div>
-              </div>
-            }
-            @if (htmlVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">HTML</div>
-              </div>
-            }
-            @if (scssVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">SCSS</div>
-              </div>
-            }
-            @if (javascriptVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">JavaScript</div>
-              </div>
-            }
-            @if (nodeVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">Node.js</div>
-              </div>
-            }
-            @if (sqlVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">SQL</div>
-              </div>
-            }
-            @if (educationalVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">Educational Technology</div>
-              </div>
-            }
-            @if (technicalVisible) {
-              <div class="hexagon" [@slide-right]>
-                <div class="center-skill">Technical Support</div>
-              </div>
-            }
-          </div>
+    @if (aboutVisible) {
+        <div [@fade]>
+            <h2 class="center">About Me</h2>
+            <div class="center">Experienced developer with a demonstrated history of working in the computer software industry.</div>
+            <div class="center">Fluent in Romanian with a working proficiency in Spanish.</div>
+            <div class="flex-50-2">
+                <div class="about">
+                    <div class="skills">
+                        @if (angularVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">Angular</div>
+                            </div>
+                        }
+                        @if (javaVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">Java</div>
+                            </div>
+                        }
+                        @if (htmlVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">HTML</div>
+                            </div>
+                        }
+                        @if (scssVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">SCSS</div>
+                            </div>
+                        }
+                        @if (javascriptVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">JavaScript</div>
+                            </div>
+                        }
+                        @if (nodeVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">Node.js</div>
+                            </div>
+                        }
+                        @if (sqlVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">SQL</div>
+                            </div>
+                        }
+                        @if (educationalVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">Educational Technology</div>
+                            </div>
+                        }
+                        @if (technicalVisible) {
+                            <div class="hexagon" [@slide-right]>
+                                <div class="center-skill">Technical Support</div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <img src="assets/20161018_184702.jpg" class="selfie" />
+            </div>
         </div>
-        <img src="assets/20161018_184702.jpg" class="selfie" />
-      </div>
-    </div>
-  }
+    }
 </div>
 
 <div class="section" id="experience">
-  @if (experienceVisible) {
-    <div [@fade]>
-      <h2 class="center">Experience</h2>
-      <div class="flex-50">
-        <div class="oneCard">
-          <div class="oneCard__side oneCard__front">
-            <h3 class="center">Work Experience</h3>
-          </div>
-          <div class="oneCard__side oneCard__back">
-            <div class="center">
-              <a (click)="toggle()">
-                <h3>View here</h3>
-              </a>
+    @if (experienceVisible) {
+        <div [@fade]>
+            <h2 class="center">Experience</h2>
+            <div class="flex-50">
+                <div class="oneCard">
+                    <div class="oneCard__side oneCard__front">
+                        <h3 class="center">Work Experience</h3>
+                    </div>
+                    <div class="oneCard__side oneCard__back">
+                        <div class="center">
+                            <button (click)="toggle()" class="btn">
+                                <h3>View here</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneCard">
+                    <div class="oneCard__side oneCard__front">
+                        <h3 class="center">Portfolio</h3>
+                    </div>
+                    <div class="oneCard__side oneCard__back">
+                        <div class="center">
+                            <a href="https://github.com/norandiaconu" target="_blank">
+                                <h3>View GitHub</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneCard">
+                    <div class="oneCard__side oneCard__front">
+                        <h3 class="center">Education</h3>
+                    </div>
+                    <div class="oneCard__side oneCard__back">
+                        <div class="center2">
+                            <h3 class="margin2">Appalachian State</h3>
+                            <h3 class="margin2">University</h3>
+                            <h3 class="margin2">(2009)</h3>
+                            <div>&nbsp;</div>
+                            <h4 class="margin2">Bachelor of Science</h4>
+                            <h5 class="margin2">Computer Science</h5>
+                            <h5 class="margin2">Minor - Mathematics</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="oneCard">
-          <div class="oneCard__side oneCard__front">
-            <h3 class="center">Portfolio</h3>
-          </div>
-          <div class="oneCard__side oneCard__back">
-            <div class="center">
-              <a href="https://github.com/norandiaconu" target="_blank">
-                <h3>View GitHub</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="oneCard">
-          <div class="oneCard__side oneCard__front">
-            <h3 class="center">Education</h3>
-          </div>
-          <div class="oneCard__side oneCard__back">
-            <div class="center2">
-              <h3 class="margin2">Appalachian State</h3>
-              <h3 class="margin2">University</h3>
-              <h3 class="margin2">(2009)</h3>
-              <div>&nbsp;</div>
-              <h4 class="margin2">Bachelor of Science</h4>
-              <h5 class="margin2">Computer Science</h5>
-              <h5 class="margin2">Minor - Mathematics</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  }
+    }
 </div>
 
 @if (display) {
-  <div class="backdrop" (click)="toggle()" [ngStyle]="{ height: totalHeight + 'px' }"></div>
+    <button class="backdrop" (click)="toggle()" [ngStyle]="{ height: totalHeight + 'px' }"></button>
 }
 @if (display) {
-  <div class="overlay" [@fade]>
-    <a (click)="toggle()" class="top-right">
-      <img src="assets/cross.svg" />
-    </a>
-    <div class="two-columns">
-      <div class="position">
-        <h4 class="mtb1">Senior Front End Software Engineer I</h4>
-        <h5 class="mb1">iRhythm Technologies, Inc.</h5>
-        <h6 class="mb1">Oct 2023 - Present</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">Angular Front End Software Engineer</h4>
-        <h5 class="mb1">Jumio Corporation</h5>
-        <h6 class="mb1">Oct 2022 - June 2023</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">Angular Application Developer</h4>
-        <h5 class="mb1">Aflac</h5>
-        <h6 class="mb1">Feb 2022 - Sept 2022</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">Angular Developer</h4>
-        <h5 class="mb1">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
-        <h6 class="mb1">Feb 2021 - Jan 2022</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">Java Developer</h4>
-        <h5 class="mb1">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
-        <h6 class="mb1">Oct 2019 - Feb 2021</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">Software Developer</h4>
-        <h5 class="mb1">RapidCourt</h5>
-        <h6 class="mb1">Oct 2017 - Sept 2019</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">IT Manager</h4>
-        <h5 class="mb1">Bright Audio Video</h5>
-        <h6 class="mb1">Jan 2017 - Sept 2017</h6>
-      </div>
-      <div class="position">
-        <h4 class="mtb1">Classroom Support Technician</h4>
-        <h5 class="mb1">Appalachian State University</h5>
-        <h6 class="mb1">Jul 2013 - Dec 2016</h6>
-      </div>
+    <div class="overlay" [@fade]>
+        <button (click)="toggle()" class="top-right btn">
+            <img src="assets/cross.svg" />
+        </button>
+        <div class="two-columns">
+            <div class="position">
+                <h4 class="mtb1">Senior Front End Software Engineer I</h4>
+                <h5 class="mb1">iRhythm Technologies, Inc.</h5>
+                <h6 class="mb1">Oct 2023 - Present</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">Angular Front End Software Engineer</h4>
+                <h5 class="mb1">Jumio Corporation</h5>
+                <h6 class="mb1">Oct 2022 - June 2023</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">Angular Application Developer</h4>
+                <h5 class="mb1">Aflac</h5>
+                <h6 class="mb1">Feb 2022 - Sept 2022</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">Angular Developer</h4>
+                <h5 class="mb1">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
+                <h6 class="mb1">Feb 2021 - Jan 2022</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">Java Developer</h4>
+                <h5 class="mb1">Empowered Benefits, LLC [acquired by Aflac in 2022]</h5>
+                <h6 class="mb1">Oct 2019 - Feb 2021</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">Software Developer</h4>
+                <h5 class="mb1">RapidCourt</h5>
+                <h6 class="mb1">Oct 2017 - Sept 2019</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">IT Manager</h4>
+                <h5 class="mb1">Bright Audio Video</h5>
+                <h6 class="mb1">Jan 2017 - Sept 2017</h6>
+            </div>
+            <div class="position">
+                <h4 class="mtb1">Classroom Support Technician</h4>
+                <h5 class="mb1">Appalachian State University</h5>
+                <h6 class="mb1">Jul 2013 - Dec 2016</h6>
+            </div>
+        </div>
     </div>
-  </div>
 }
 
 <div class="section" id="contact">
-  @if (contactVisible) {
-    <div id="contacts" [@fade]>
-      <h2 class="center">Contact</h2>
-      <a href="mailto: norandiaconu@gmail.com" class="oneContact">
-        <img src="assets/gmail.svg" alt="Gmail logo" class="logo" />
-        <h3>Email</h3>
-      </a>
-      <a href="https://www.linkedin.com/in/noran-diaconu" target="_blank" class="oneContact">
-        <img src="assets/linkedin.svg" alt="LinkedIn logo" class="logo" />
-        <h3>LinkedIn</h3>
-      </a>
-    </div>
-  }
+    @if (contactVisible) {
+        <div id="contacts" [@fade]>
+            <h2 class="center">Contact</h2>
+            <a href="mailto: norandiaconu@gmail.com" class="oneContact">
+                <img src="assets/gmail.svg" alt="Gmail logo" class="logo" />
+                <h3>Email</h3>
+            </a>
+            <a href="https://www.linkedin.com/in/noran-diaconu" target="_blank" class="oneContact">
+                <img src="assets/linkedin.svg" alt="LinkedIn logo" class="logo" />
+                <h3>LinkedIn</h3>
+            </a>
+        </div>
+    }
 </div>
 
 <footer>
-  <a href="#">
-    <img src="assets/circle-up.svg" />
-  </a>
+    <a href="#">
+        <img src="assets/circle-up.svg" />
+    </a>
 
-  @if (displayCredits) {
-    <div class="backdrop" (click)="toggleCredits()" [ngStyle]="{ height: totalHeight + 'px' }"></div>
-  }
-  @if (displayCredits) {
-    <div class="overlay" [@fade]>
-      <a (click)="toggleCredits()" class="top-right">
-        <img src="assets/cross.svg" />
-      </a>
-      <div class="text-center">Credits to mixkit.co for the video and icomoon.io for the icons</div>
-    </div>
-  }
-  <a (click)="toggleCredits()">
-    <h3>Credits</h3>
-  </a>
+    @if (displayCredits) {
+        <button class="backdrop" (click)="toggleCredits()" [ngStyle]="{ height: totalHeight + 'px' }"></button>
+    }
+    @if (displayCredits) {
+        <div class="overlay" [@fade]>
+            <button (click)="toggleCredits()" class="top-right btn">
+                <img src="assets/cross.svg" />
+            </button>
+            <div class="text-center">Credits to mixkit.co for the video and icomoon.io for the icons</div>
+        </div>
+    }
+    <br />
+    <button (click)="toggleCredits()" class="btn">
+        <h3>Credits</h3>
+    </button>
 </footer>

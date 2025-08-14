@@ -286,6 +286,20 @@ a {
     }
 }
 
+.btn {
+    border: none;
+    background: inherit;
+    color: orangered;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .center2 {
     display: flex;
     flex-direction: column;
