@@ -18,28 +18,27 @@ import { NgStyle } from '@angular/common';
     imports: [NgStyle]
 })
 export class AppComponent {
-    title = 'norandiaconu-github-io';
-    timeout = 500;
-    display = false;
-    displayCredits = false;
-    aboutVisible = false;
+    private timeout = 500;
+    protected display = false;
+    protected displayCredits = false;
+    protected aboutVisible = false;
 
-    angularVisible = false;
-    javaVisible = false;
-    htmlVisible = false;
-    scssVisible = false;
-    javascriptVisible = false;
-    nodeVisible = false;
-    sqlVisible = false;
-    educationalVisible = false;
-    technicalVisible = false;
+    protected angularVisible = false;
+    protected javaVisible = false;
+    protected htmlVisible = false;
+    protected scssVisible = false;
+    protected javascriptVisible = false;
+    protected nodeVisible = false;
+    protected sqlVisible = false;
+    protected educationalVisible = false;
+    protected technicalVisible = false;
 
-    experienceVisible = false;
-    contactVisible = false;
-    totalHeight = 0;
+    protected experienceVisible = false;
+    protected contactVisible = false;
+    protected totalHeight = 0;
 
     @HostListener('window:scroll')
-    private scroll(): void {
+    protected scroll(): void {
         if (window.innerWidth > window.innerHeight) {
             if (window.scrollY > window.innerHeight * 0.7) {
                 this.aboutVisible = true;
