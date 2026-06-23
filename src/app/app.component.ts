@@ -1,6 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, HostListener } from '@angular/core';
 import { NgStyle } from '@angular/common';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-root',
